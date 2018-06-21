@@ -35,7 +35,7 @@ for lesson in lessons:
             video_out = output_folder + '/' + module_name + '/' + video_name + '.mp4'
             #print('        ', domain + video_url)
             #print('        ', video_out)
-            url_opath = "youtube-dl -f 133 -u {} -p {} --output '{}' -f worst {}".format(
+            url_opath = "youtube-dl --no-check-certificate -u {} -p {} --output '{}' -f worst {}".format(
                 username, password, video_out, video_url)
             print(url_opath)
             #print("youtube-dl -u {} -p {} --output '{}' {}".format(username, password, video_out, video_url))
@@ -50,7 +50,7 @@ for lesson in lessons:
                 '/' + lesson_name + '/' + video_name + '.mp4'
             # print('        ', domain + video_url)
             # print('        ', video_out)
-            url_opath = "youtube-dl -u {} -p {} --output '{}' -f worst {}".format(
+            url_opath = "youtube-dl --no-check-certificate -u {} -p {} --output '{}' -f worst {}".format(
                 username, password, video_out, video_url)
             print(url_opath)
             #print("youtube-dl -u {} -p {} --output '{}' {}".format(username, password, video_out, video_url))
