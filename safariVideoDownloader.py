@@ -39,7 +39,7 @@ for lesson in lessons:
                 username, password, video_out, video_url)
             print(url_opath)
             #print("youtube-dl -u {} -p {} --output '{}' {}".format(username, password, video_out, video_url))
-           # subprocess.run(url_opath, shell=True, check=True)
+            subprocess.run(url_opath, shell=True, check=True)
     else:
         os.makedirs(output_folder + '/' + module_name + '/' + lesson_name)
         # print('   ', lesson_name)
@@ -54,4 +54,4 @@ for lesson in lessons:
                 username, password, video_out, video_url)
             print(url_opath)
             #print("youtube-dl -u {} -p {} --output '{}' {}".format(username, password, video_out, video_url))
-           # subprocess.run(url_opath, shell=True, check=True)
+            subprocess.run(url_opath, shell=True, check=True)
